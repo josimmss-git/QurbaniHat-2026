@@ -13,13 +13,13 @@ const Banner = () => {
            QurbaniHat – Livestock Booking Platform
           </h1>
           <p className="text-lg md:text-xl mb-6 max-w-xl text-gray-200">
-            Book your livestock for Qurbani with ease.
+            Find Your Perfect Qurbani Healthy & Verified Animals
           </p>
 
           <div className="flex gap-4">
             <Link href="#">
               <Button className="bg-linear-to-r from-pink-500 via-purple-500 bg-red-500">
-                Generate Now
+               Browse Animals
               </Button>
             </Link>
 
