@@ -52,7 +52,7 @@
     "age": 3,
     "location": "Pabna",
     "description": "Large size goat with সুন্দর গঠন and healthy condition.",
-    "image": "https://www.pexels.com/photo/close-up-of-a-nubian-goat-on-a-farm-35679351/",
+    "image": "https://images.pexels.com/photos/35679352/pexels-photo-35679352.jpeg",
     "category": "Small Animal"
   },
   {
@@ -78,7 +78,7 @@
     "age": 2,
     "location": "Dhaka",
     "description": "Arabic taste, fresh and ভালো মানের.",
-    "image": "https://www.pexels.com/photo/rustic-mountain-sheep-grazing-in-natural-habitat-34115177/",
+    "image": "https://images.pexels.com/photos/25190313/pexels-photo-25190313.jpeg",
     "category": "Small Animal"
   },
   {
@@ -91,7 +91,7 @@
     "age": 4,
     "location": "Khulna",
     "description": "Strong and healthy cow, perfect for Qurbani with good weight.",
-    "image": "https://www.pexels.com/photo/close-up-of-brown-cow-outdoors-in-sunlight-30517924/",
+    "image": "https://images.pexels.com/photos/30517924/pexels-photo-30517924.jpeg",
     "category": "Large Animal"
   },
   {
@@ -117,7 +117,8 @@
     "age": 2,
     "location": "Barisal",
     "description": "Fresh deshi Bafalo cow, গ্রাম থেকে সংগ্রহ করা.",
-    "image": "https://www.pexels.com/photo/brown-brahman-cow-standing-in-rustic-setting-37398388/",
+    "image": "https://images.pexels.com/photos/37398388/pexels-photo-37398388.jpeg",
     "category": "Large Animal"
   }
 ]}
+
