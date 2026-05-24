@@ -13,7 +13,7 @@
     "age": 3,
     "location": "Bogura",
     "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural খাবার.",
-    "image": "https://images.pexels.com/photos/37398388/pexels-photo-37398388.jpeg",
+    "image": "/public/all_animal/id 1.jpeg",
     "category": "Large Animal"
   },
   {
@@ -26,7 +26,7 @@
     "age": 4,
     "location": "Sirajganj",
     "description": "High-quality Friesian cow with excellent health and strong body.",
-    "image": "https://images.pexels.com/photos/31113098/pexels-photo-31113098.jpeg",
+    "image": "/public/all_animal/id 2.jpeg",
     "category": "Large Animal"
   },
   {
@@ -39,7 +39,7 @@
     "age": 2,
     "location": "Rajshahi",
     "description": "Popular goat breed in Bangladesh, খুব সুস্বাদু মাংস.",
-    "image": "https://images.pexels.com/photos/13078466/pexels-photo-13078466.jpeg",
+    "image": "/public/all_animal/id 3.jpeg",
     "category": "Small Animal"
   },
   {
