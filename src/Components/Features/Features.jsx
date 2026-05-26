@@ -3,7 +3,7 @@ import React from 'react';
 import PhotoCard from './PhotoCard';
 
 const FreaturePage = async () => {
-  const res = await fetch('https://qurbani-hat-2026.vercel.app/Data.json')
+  const res = await fetch('http://localhost:3000/Data.json')
   const photos = await res.json()
   const topphotos=photos.animals.slice(3,7)
 

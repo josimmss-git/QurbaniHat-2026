@@ -3,35 +3,34 @@ import { Card } from "@heroui/react";
 import Image from 'next/image';
 
 const PhotoCard = ({ photo }) => {
-
   return (
     <Card className='border rounded-2xl shadow-lg p-4'>
-      <div className='w-full aspect-square relative mb-4'>
-        <Image
-          src={photo.image}
-         fill
-          alt={photo.title}
-          className='object-cover rounded-xl'
-        />
-      </div>
-      
-      
-          <div> 
-          <h3 className='text-xl font-bold mb-2'>{photo.name}</h3>
-            <p className='text-gray-600 mb-2'>Age: {photo.age} years</p>
-          <p className='text-gray-600 mb-2'>Location: {photo.location}</p>
-          
-          
-          <p className='text-gray-600 '>{photo.description}</p>
-          <p className='text-gray-600 text-2xl font-bold'>Price: ${photo.price.toFixed(2)}</p>
-
-      </div>
-
- 
-      
-
+           <div className='w-full aspect-square relative mb-4'>
+             <Image
+               src={photo.image}
+              fill
+               alt={photo.title}
+               className='object-cover rounded-xl'
+             />
+           </div>
+           
+           
+               <div> 
+               <h3 className='text-xl font-bold mb-2'>{photo.name}</h3>
+                 <p className='text-gray-600 mb-2'>Age: {photo.age} years</p>
+               <p className='text-gray-600 mb-2'>Location: {photo.location}</p>
+               
+               
+               <p className='text-gray-600 '>{photo.description}</p>
+               <p className='text-gray-600 text-2xl font-bold'>Price: ${photo.price.toFixed(2)}</p>
      
-    </Card>
+           </div>
+     
+      
+           
+     
+          
+         </Card>
   );
 };
 
