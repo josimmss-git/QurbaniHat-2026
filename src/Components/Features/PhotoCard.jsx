@@ -1,6 +1,7 @@
 import React from 'react';
-import { Card } from "@heroui/react";
+import { Button, Card } from "@heroui/react";
 import Image from 'next/image';
+import Link from 'next/link';
 
 const PhotoCard = ({ photo }) => {
   return (
@@ -24,13 +25,13 @@ const PhotoCard = ({ photo }) => {
                <p className='text-gray-600 '>{photo.description}</p>
                <p className='text-gray-600 text-2xl font-bold'>Price: ${photo.price.toFixed(2)}</p>
      
-           </div>
-     
-      
-           
-     
-          
-         </Card>
+      </div>
+      <Link href={`/all-animals/${photo.id}`} className='mt-4 inline-block w-full'>
+        <Button variant='outline' color='primary'>
+          View Details
+        </Button>
+      </Link>
+    </Card>
   );
 };
 
