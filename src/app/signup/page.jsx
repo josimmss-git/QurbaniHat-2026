@@ -40,6 +40,13 @@ const router=useRouter();
 
   };
 
+  
+const signInWithGoogle = async () => {
+  const data = await authClient.signIn.social({
+    provider: "google",
+  });
+};
+
   return (
     <Card className="border mx-auto w-125 py-10 mt-5">
       <h1 className="text-center text-2xl font-bold">Sign Up</h1>
@@ -110,7 +117,15 @@ const router=useRouter();
             Reset
           </Button>
         </div>
+        
       </Form>
+      <p className="text-center mt-4">OR</p>
+      <Button variant="outline" className="mx-auto mt-4" onClick={signInWithGoogle}>
+        Sign Up with Google
+      </Button>
+
+
+
     </Card>
   );
 }

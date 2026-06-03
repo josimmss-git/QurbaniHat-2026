@@ -153,3 +153,4 @@ const FreaturePage = async () => {
 }
 
 export default FreaturePage;
+
