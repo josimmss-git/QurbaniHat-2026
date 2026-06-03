@@ -1,5 +1,5 @@
 "use client";
-import { Check } from "@gravity-ui/icons";
+import { Check, } from "@gravity-ui/icons";
 import {
   Button,
   Card,
@@ -9,9 +9,11 @@ import {
   Input,
   Label,
   TextField,
+  
 } from "@heroui/react";
 import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
+
 
 export default function SignUpPage() {
 const router=useRouter();
@@ -41,15 +43,15 @@ const router=useRouter();
   };
 
   
-const signInWithGoogle = async () => {
-  const data = await authClient.signIn.social({
+const handleGoogleSignUp = async () => {
+ await authClient.signIn.social({
     provider: "google",
   });
 };
 
   return (
     <Card className="border mx-auto w-125 py-10 mt-5">
-      <h1 className="text-center text-2xl font-bold">Sign Up</h1>
+      <h1 className="text-center text-2xl font-bold">Register</h1>
 
       <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
         <TextField isRequired name="name" type="text">
@@ -120,8 +122,9 @@ const signInWithGoogle = async () => {
         
       </Form>
       <p className="text-center mt-4">OR</p>
-      <Button variant="outline" className="mx-auto mt-4" onClick={signInWithGoogle}>
-        Sign Up with Google
+      <Button variant="outline" className={"mx-auto mt-4" }onClick={handleGoogleSignUp}>
+       
+        Register with Google
       </Button>
 
 

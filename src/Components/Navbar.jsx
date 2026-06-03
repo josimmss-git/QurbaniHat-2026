@@ -25,6 +25,7 @@ const Navbar = () => {
           <li>
             <Link href={"/all-animals"}>All Animal</Link>
           </li>
+
           <li>
             <Link href={"/pricing"}>Pricing</Link>
           </li>
@@ -36,10 +37,10 @@ const Navbar = () => {
         <div className="flex gap-4">
           <ul className="flex items-center  text-sm gap-4">
             <li>
-              <Link href={"/signup"}>Login</Link>
+              <Link href={"/signup"}>Register</Link>
             </li>
             <li>
-              <Link href={"/signin"}>Logout</Link>
+              <Link href={"/signin"}>Login</Link>
             </li>
           </ul>
         </div>

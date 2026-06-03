@@ -1,10 +1,13 @@
 import { Button } from "@heroui/react";
 import Link from "next/link";
+import TipsPage from "../Tips/Tips";
+
 
 
 const Banner = () => {
   return (
-    <div className="h-[60vh] w-full bg-cover bg-no-repeat bg-center flex items-center rounded-lg shadow-2xl" style={{ backgroundImage: "url('/hero.png')" }}>
+    <>
+     <div className="h-[60vh] w-full bg-cover bg-no-repeat bg-center flex items-center rounded-lg shadow-2xl" style={{ backgroundImage: "url('/hero.png')" }}>
 
       {/* Overlay */}
       <div className="w-full h-full rounded-lg bg-black/50 flex items-center ">
@@ -23,15 +26,34 @@ const Banner = () => {
               </Button>
             </Link>
 
-            <Link href="/pricing">
-              <Button variant="outline" className="text-white">
-                View Pricing
+            <Link href="/signup">
+              <Button variant="outline" className="text-white border-white">
+               Learn More
               </Button>
             </Link>
+            
+          
           </div>
+          <div> <ul className="flex gap-10 text-2xl justify-between text-white mt-10 w-100 h-auto">
+              <li>500+ Animals </li>
+          <li>120+ Farms</li>
+          
+          <li>1000+
+            Bookings
+          </li></ul></div>
+
         </div>
+       
+            
       </div>
+     
     </div>
+    
+    
+      <TipsPage />
+     
+    </>
+   
   );
 };
 
