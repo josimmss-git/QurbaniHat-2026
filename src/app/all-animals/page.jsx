@@ -1,6 +1,6 @@
 import PhotoCard from "@/Components/Features/PhotoCard";
 
-
+export const dynamic = 'force-dynamic'
 
 
 

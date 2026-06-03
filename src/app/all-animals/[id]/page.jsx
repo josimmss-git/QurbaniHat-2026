@@ -1,6 +1,6 @@
 import { Button } from "@heroui/react";
 import Image from "next/image";
-
+export const dynamic = 'force-dynamic'
 const AnimalDetailsPage = async ({ params }) => {
   const { id } = await params;
   const res = await fetch('http://localhost:3000/Data.json')

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import PhotoCard from './PhotoCard';
-
+export const dynamic = 'force-dynamic'
 const FreaturePage = async () => {
   const res = await fetch('http://localhost:3000/Data.json')
   const photos = await res.json()
