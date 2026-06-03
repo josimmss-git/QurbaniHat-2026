@@ -10,7 +10,7 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
-import { authClient } from "@/lib/auth-client";
+import { authClient } from "../lib/auth-client";
 
 export default function SignInPage() {
   const onSubmit = async (e) => {
