@@ -1,15 +1,15 @@
-import CatagoryPage from "@/Components/Catagory";
-import PhotoCard from "@/Components/Features/PhotoCard";
-
-export const dynamic = 'force-dynamic'
+import { Button } from "@heroui/react";
 
 
+const CatagoryPage =async () => {
 
-const allAnimalPage =async () => {
-  //  const res = await fetch('https://qurbani-hat-2026.vercel.app/Data.json')
-  //  const photos = await res.json()
-  
-  const photos=
+
+  // const res =
+  //   await fetch('https://qurbani-hat-2026.vercel.app/Data.json')
+  // const catagories = await res.json()
+
+  const catagories= 
+ 
 {
   "animals": [
     
@@ -132,19 +132,16 @@ const allAnimalPage =async () => {
     "category": "Large Animal"
   }
 ]}
-
+  
+  
 
   return (
-    <div>
-      <h2 className='text-2xl font-bold m-4 flex text-center justify-center'>All Animals</h2>
-
-      <CatagoryPage />
-
-      <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-     {photos.animals.map(photo=> < PhotoCard key={photo.id} photo={photo} />)}
-      </div>
+    <div className="flex gap-4 justify-center my-4">
+      {
+        catagories.animals.map(catagory=> <Button variant="outline" size="sm" key={catagory.id}>{catagory.name}</Button>)
+     } 
     </div>
   );
 };
 
-export default allAnimalPage;
+export default CatagoryPage;

@@ -12,8 +12,8 @@ const Navbar = () => {
     await authClient.signOut();
   }
  
-  return (
-    <div className="border-b px-2">
+  return(
+   <div className="border-b px-2">
       <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
         <div className="flex gap-2 items-center">
           <Image
@@ -36,10 +36,7 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link href={"/pricing"}>Pricing</Link>
-          </li>
-          <li>
-            <Link href={"/profile"}>Profile</Link>
+            <Link href={"/profile"}>My Profile</Link>
           </li>
         </ul>
        
@@ -69,12 +66,8 @@ const Navbar = () => {
                 Logout
               </Button>
 
-
-            </div>
-          )}
-       </div>
-
-
+              </div>)}
+        </div>
       </nav>
     </div>
   );

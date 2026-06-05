@@ -135,7 +135,7 @@ const FreaturePage = async () => {
 
   const topphotos=photos.animals.slice(3,7)
 
-  console.log(topphotos);
+  
 
 
   return (
