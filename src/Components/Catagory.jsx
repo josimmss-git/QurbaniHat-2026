@@ -1,15 +1,12 @@
-import { Button } from "@heroui/react";
+"use client";
+
+import { useState } from "react";
 
 
-const CatagoryPage =async () => {
-
-
-  // const res =
-  //   await fetch('https://qurbani-hat-2026.vercel.app/Data.json')
-  // const catagories = await res.json()
-
-  const catagories= 
- 
+export default function CategoryPage() {
+  
+  const [sortOrder, setSortOrder] = useState("asc");
+ const photos=
 {
   "animals": [
     
@@ -132,16 +129,38 @@ const CatagoryPage =async () => {
     "category": "Large Animal"
   }
 ]}
-  
-  
+
+
+  const sortedAnimals = [...photos.animals].sort((a, b) =>
+    sortOrder === "asc"
+      ? a.price - b.price
+      : b.price - a.price
+  );
 
   return (
-    <div className="flex gap-4 justify-center my-4">
-      {
-        catagories.animals.map(catagory=> <Button variant="outline" size="sm" key={catagory.id}>{catagory.name}</Button>)
-     } 
+    <div className="max-w-7xl mx-auto px-4 py-10">
+      <div className="flex justify-between items-center mb-6">
+        <h1 className="text-3xl font-bold">
+          All Animals
+        </h1>
+
+        <select
+          className="border p-2 rounded"
+          value={sortOrder}
+          onChange={(e) => setSortOrder(e.target.value)}
+
+          >
+          <option value="asc">
+            Price: Low to High
+          </option>
+          <option value="desc">
+            Price: High to Low
+          </option>
+        </select>
+        
+        
+      </div>
+
     </div>
   );
-};
-
-export default CatagoryPage;
+}

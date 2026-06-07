@@ -1,8 +1,16 @@
+import BookingForm from "@/Components/BookingForm";
 import { Button } from "@heroui/react";
 import Image from "next/image";
+import Link from "next/link";
+
+
+
 export const dynamic = 'force-dynamic'
+
+
 const AnimalDetailsPage = async ({ params }) => {
   const { id } = await params;
+
 
 // const res = await fetch('https://qurbani-hat-2026.vercel.app/Data.json')
 //    const photos = await res.json()
@@ -131,19 +139,33 @@ const AnimalDetailsPage = async ({ params }) => {
   }
 ]}
 
-
+  
+ 
+   
   const animal = photos.animals.find(a => a.id == id)
   console.log(animal, 'details page');
+   
+ 
+
+
   
   return (
     <div>
-      <div>
+     <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md">
         
-        <div className='w-full aspect-square relative mb-4'>
-    <Image src={animal.image}
-      fill
-      alt={animal.name} />
-  </div>
+        <div className='w-full aspect-square relative mb-4 m-4'>
+          <Image src={animal.image}
+            fill
+     
+            alt={animal.name}
+          
+     
+            className='object-cover rounded-xl'
+          />
+              
+        </div>
+        
+        <div className="px-4 py-2 m-8"> 
     
         <h2 className="text-4xl font-bold text-gray-800 mb-4">Name: {animal.name}</h2>
         
@@ -170,10 +192,21 @@ const AnimalDetailsPage = async ({ params }) => {
             <p>
               <span className="font-semibold">Description:</span> {animal.description}
           </p>
-        </div>
-          <Button variant="primary" className="mt-6">Book Now</Button>
-  </div>
-  </div>);
-};
+         </div>
+       
+          <Link href={"/booking"} className="inline-block mt-4 text-blue-500 hover:underline">
+             <Button color="primary" className="mt-6">Book Now</Button> 
+          </Link>
+       
+  
+     
 
+
+      </div>
+       </div>
+        
+     </div>
+      );
+
+}
 export default AnimalDetailsPage;

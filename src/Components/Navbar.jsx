@@ -12,9 +12,10 @@ const Navbar = () => {
     await authClient.signOut();
   }
  
-  return(
+  return (
+   
    <div className="border-b px-2">
-      <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
+      <nav className="flex justify-between items-center py-3 max-w-7xl mx-auto w-full">
         <div className="flex gap-2 items-center">
           <Image
             src={"/qurbani-logo.png"}
@@ -27,6 +28,8 @@ const Navbar = () => {
           <h3 className="font-black text-lg">QurbaniHat</h3>
         </div>
 
+        <div>
+          
         <ul className="flex items-center gap-5 text-sm">
           <li>
             <Link href={"/"}>Home</Link>
@@ -39,7 +42,7 @@ const Navbar = () => {
             <Link href={"/profile"}>My Profile</Link>
           </li>
         </ul>
-       
+       </div>
           
         <div className="flex gap-4">
            {
@@ -50,7 +53,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link href={"/signin"}>Login</Link>
-            </li>
+            </li> 
             </ul>}
           {
             user && (
@@ -69,8 +72,10 @@ const Navbar = () => {
               </div>)}
         </div>
       </nav>
-    </div>
+      </div>
+
   );
 };
 
 export default Navbar;
+
