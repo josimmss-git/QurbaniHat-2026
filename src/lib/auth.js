@@ -12,9 +12,7 @@ const client = new MongoClient(mongoUrl);
 const db = client.db('qurbanihat');
 
 export const auth = betterAuth({
-  database: mongodbAdapter(db, {
-    client
-  }),
+  database: mongodbAdapter(db),  // ✅ just pass db
   emailAndPassword: {
     enabled: true,
   },
